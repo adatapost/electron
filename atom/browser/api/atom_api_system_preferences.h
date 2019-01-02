@@ -92,7 +92,7 @@ class SystemPreferences : public mate::EventEmitter<SystemPreferences>
   void RemoveUserDefault(const std::string& name);
   bool IsSwipeTrackingFromScrollEventsEnabled();
 
-  bool IsTrustedAccessibilityClient(bool prompt);
+  static bool IsTrustedAccessibilityClient(bool prompt);
 
   // TODO(codebytere): Write tests for these methods once we
   // are running tests on a Mojave machine

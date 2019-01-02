@@ -378,6 +378,7 @@ void SystemPreferences::SetUserDefault(const std::string& name,
   }
 }
 
+// static
 bool SystemPreferences::IsTrustedAccessibilityClient(bool prompt) {
   NSDictionary* options = @{(id)kAXTrustedCheckOptionPrompt : @(prompt)};
   return AXIsProcessTrustedWithOptions((CFDictionaryRef)options);
